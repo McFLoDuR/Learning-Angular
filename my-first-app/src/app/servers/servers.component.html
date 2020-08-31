@@ -1,2 +1,9 @@
-<app-server></app-server>
-<app-server></app-server>
+<div class="assignment">
+    <input type="text" [(ngModel)]="username">
+    <br>
+    {{ username }}
+    <br>
+    <button
+    [disabled]="isUserEmpty()"
+    (click)="clearUsername()" >Clear Username!</button>
+</div>

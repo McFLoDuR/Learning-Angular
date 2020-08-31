@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.sass']
 })
 export class ServersComponent implements OnInit {
+  username = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  isUserEmpty() {
+    if(this.username === '')
+      return true;
+    else
+      return false;
+  }
+
+  clearUsername() {
+    this.username = '';
+  }
 }
